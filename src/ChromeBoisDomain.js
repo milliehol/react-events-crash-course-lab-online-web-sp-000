@@ -11,6 +11,13 @@ export default class ChromeBoisDomain extends Component {
      * (`drawChromeBoiAtCoords` expects two arguments, an x and a y coordinate)
      */
   }
+  handleKeyDown = (event) => {
+   if (event.key === 'a') {
+     resize('+')
+   } else if (event.key === 's') {
+     resize('-')
+   }
+ }
 
   /* TODO: Create an event handler which, when fired, invokes the provided
    * `toggleCycling` function with no arguments. Don't forget the click event
